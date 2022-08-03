@@ -17,6 +17,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
         />
     <Button
         android:layout_width="wrap_content"
@@ -28,6 +29,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/timerTV"
         />
     <LinearLayout
+        android:id="@+id/gameBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -197,6 +199,18 @@
             />
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submitButton"
+        app:layout_constraintTop_toBottomOf="@+id/gameBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_35sdp"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
