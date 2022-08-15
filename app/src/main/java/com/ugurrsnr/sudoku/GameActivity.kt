@@ -33,10 +33,10 @@ class GameActivity : AppCompatActivity() {
                 || number7 == null ||number8 == null ||number9 == null){
 
                 Toast.makeText(this,"Please fill the boxes",Toast.LENGTH_LONG).show()
+
             } else  {
                 checkGameResult()
             }
-
 
 
         }
@@ -53,7 +53,7 @@ class GameActivity : AppCompatActivity() {
         number7 = binding.box31.text.toString().toIntOrNull()
         number8 = binding.box32.text.toString().toIntOrNull()
         number9 = binding.box33.text.toString().toIntOrNull()
-    }
+    } //taking the input numbers
 
     private fun checkGameResult(){
         val cp1 : Int = number1!! + number2!! + number3!! //first row, cp : checkpoint

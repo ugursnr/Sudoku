@@ -7,10 +7,12 @@
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/drawable/button_shape3_main.xml" value="0.116" />
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/drawable/button_shape_main.xml" value="0.116" />
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/drawable/button_shape_pressed.xml" value="0.116" />
+        <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/drawable/game_level_background.xml" value="0.21" />
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/drawable/horizontal_line.xml" value="0.116" />
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/drawable/ic_launcher_background.xml" value="0.116" />
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/layout/activity_game.xml" value="0.2" />
         <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/5-GitHub/11-Sudoku/app/src/main/res/layout/game_level_row.xml" value="0.4" />
       </map>
     </option>
   </component>
