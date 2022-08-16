@@ -1,6 +1,5 @@
-package com.ugurrsnr.sudoku
+package com.ugurrsnr.sudoku.view
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,9 +12,5 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.startGameBtn.setOnClickListener {
-            val intent = Intent(this@MainActivity,GameActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

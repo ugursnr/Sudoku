@@ -1,9 +1,8 @@
-package com.ugurrsnr.sudoku
+package com.ugurrsnr.sudoku.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import com.ugurrsnr.sudoku.databinding.ActivityGameBinding
 
 class GameActivity : AppCompatActivity() {
