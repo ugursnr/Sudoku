@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Play Game"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:id="@+id/homeFragment"/>
+    <item
+        android:title="Achivements"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:id="@+id/achivementsFragment"/>
+    <item
+        android:title="Settings"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:id="@+id/settingsFragment"/>
+
+</menu>

@@ -19,4 +19,14 @@
         android:name="com.ugurrsnr.sudoku.view.GameFragment"
         android:label="fragment_game"
         tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/achivementsFragment"
+        android:name="com.ugurrsnr.sudoku.view.AchivementsFragment"
+        android:label="fragment_achivements"
+        tools:layout="@layout/fragment_achivements" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ugurrsnr.sudoku.view.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
