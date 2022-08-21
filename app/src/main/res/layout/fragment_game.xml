@@ -1,14 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.GameFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/timerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:text="Timer: 00:00"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/myfont"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/anasayfaTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/timerTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/timerTV"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:backgroundTint="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/left"
+                app:tint="@color/black"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Page"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:paddingLeft="@dimen/_2sdp"
+                android:fontFamily="@font/myfont"
+                android:textSize="@dimen/_11ssp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView> <!-- Home page button -->
 
-</FrameLayout>
+    <com.ugurrsnr.sudoku.SudokuBoardView
+        android:id="@+id/sudokuBoardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsLayout"
+        app:layout_constraintTop_toBottomOf="@+id/timerTV"
+        android:layout_margin="@dimen/_6sdp"
+        />
+    <GridLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        
+        >
+        <Button
+            android:id="@+id/oneButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "1"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="0"
+            android:layout_column="0"
+            />
+        <Button
+            android:id="@+id/twoButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "2"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="0"
+            android:layout_column="1"
+            />
+        <Button
+            android:id="@+id/threeButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "3"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="0"
+            android:layout_column="2"
+            />
+        <Button
+            android:id="@+id/fourButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "4"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="0"
+            android:layout_column="3"
+            />
+        <Button
+            android:id="@+id/fiveButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "5"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="0"
+            android:layout_column="4"
+            />
+        <Button
+            android:id="@+id/sixButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "6"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="1"
+            android:layout_column="0"
+            />
+        <Button
+            android:id="@+id/sevenButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "7"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="1"
+            android:layout_column="1"
+            />
+        <Button
+            android:id="@+id/eightButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "8"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="1"
+            android:layout_column="2"
+
+            />
+        <Button
+            android:id="@+id/nineButton"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_50sdp"
+            android:text = "9"
+            android:fontFamily="@font/myfont"
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_row="1"
+            android:layout_column="3"
+            />
+
+
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
