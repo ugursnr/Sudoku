@@ -56,7 +56,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView> <!-- Home page button -->
 
-    <com.ugurrsnr.sudoku.SudokuBoardView
+    <com.ugurrsnr.sudoku.view.custom.SudokuBoardView
         android:id="@+id/sudokuBoardView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rowCount="2"
-        android:columnCount="5"
+        android:columnCount="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +166,21 @@
             android:layout_row="1"
             android:layout_column="3"
             />
+        <ImageButton
+            android:id="@+id/notesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="4"
+            app:srcCompat="@drawable/pencil" />
 
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="5"
+            app:srcCompat="@drawable/ic_baseline_delete_24" /> />
 
     </GridLayout>
 
